@@ -1,0 +1,17 @@
+.error-indicator {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.error-indicator img {
+  display: block;
+  width: 120px;
+  margin: 0 auto 10px;
+}
+
+.error-indicator strong,
+.error-indicator span {
+  display: block;
+}
