@@ -34,32 +34,32 @@ export default class App extends Component {
         <RandomPlanet/>
         <PeoplePage/>
 
-        <div className="row mb2">
-          <div className="col-md-6">
-            <ItemList
-              onItemSelected={ this.onPersonSelected }
-              getData={ this.swapiService.getAllPlanet }
-              renderItem={ ( { name } ) => (<span> { name }
-                <button className='ml-2 btn btn-danger'>!</button> </span>) }
-            />
-          </div>
-          <div className="col-md-6">
-            <PersonDetails personId={ this.state.selectedPerson }/>
-          </div>
-        </div>
+        {/*<div className="row mb2">*/}
+        {/*  <div className="col-md-6">*/}
+        {/*    <ItemList*/}
+        {/*      onItemSelected={ this.onPersonSelected }*/}
+        {/*      getData={ this.swapiService.getAllPlanet }*/}
+        {/*      renderItem={ ( { name } ) => (<span> { name }*/}
+        {/*        <button className='ml-2 btn btn-danger'>!</button> </span>) }*/}
+        {/*    />*/}
+        {/*  </div>*/}
+        {/*  <div className="col-md-6">*/}
+        {/*    <PersonDetails personId={ this.state.selectedPerson }/>*/}
+        {/*  </div>*/}
+        {/*</div>*/}
 
-        <div className="row mb2">
-          <div className="col-md-6">
-            <ItemList
-              onItemSelected={ this.onPersonSelected }
-              getData={ this.swapiService.getAllStarships }
-              renderItem={ ( item ) => item.name }
-            />
-          </div>
-          <div className="col-md-6">
-            <PersonDetails personId={ this.state.selectedPerson }/>
-          </div>
-        </div>
+        {/*<div className="row mb2">*/}
+        {/*  <div className="col-md-6">*/}
+        {/*    <ItemList*/}
+        {/*      onItemSelected={ this.onPersonSelected }*/}
+        {/*      getData={ this.swapiService.getAllStarships }*/}
+        {/*      renderItem={ ( item ) => item.name }*/}
+        {/*    />*/}
+        {/*  </div>*/}
+        {/*  <div className="col-md-6">*/}
+        {/*    <PersonDetails personId={ this.state.selectedPerson }/>*/}
+        {/*  </div>*/}
+        {/*</div>*/}
 
       </div>
     );
